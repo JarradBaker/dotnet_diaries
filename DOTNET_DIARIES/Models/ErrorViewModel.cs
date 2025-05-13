@@ -1,4 +1,4 @@
-namespace dotnet_diaries.Models;
+namespace DOTNET_DIARIES.Models;
 
 public class ErrorViewModel
 {
