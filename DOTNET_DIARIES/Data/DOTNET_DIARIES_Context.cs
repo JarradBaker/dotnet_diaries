@@ -35,7 +35,7 @@ public class DOTNET_DIARIES_Context : DbContext
             Title = "Blogpost about C#",
             ImageUrl = "https://placecats.com/200/300",
             Content = "This is the content of the first blogpost.",
-            PostedDate = DateTime.Now
+            PostedDate = new DateTime(2025, 05, 14),
         });
 
         modelBuilder.Entity<Tag>().HasData(new Tag

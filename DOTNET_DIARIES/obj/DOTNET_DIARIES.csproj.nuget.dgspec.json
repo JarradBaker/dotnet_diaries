@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "\\\\wsl.localhost\\Ubuntu\\home\\jadders\\dotnet_projects\\dotnet_diaries\\DOTNET_DIARIES\\DOTNET_DIARIES.csproj": {}
+    "C:\\Users\\jarra\\Documents\\dotnet_projects\\dotnet_diaries\\DOTNET_DIARIES\\DOTNET_DIARIES.csproj": {}
   },
   "projects": {
-    "\\\\wsl.localhost\\Ubuntu\\home\\jadders\\dotnet_projects\\dotnet_diaries\\DOTNET_DIARIES\\DOTNET_DIARIES.csproj": {
+    "C:\\Users\\jarra\\Documents\\dotnet_projects\\dotnet_diaries\\DOTNET_DIARIES\\DOTNET_DIARIES.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "\\\\wsl.localhost\\Ubuntu\\home\\jadders\\dotnet_projects\\dotnet_diaries\\DOTNET_DIARIES\\DOTNET_DIARIES.csproj",
+        "projectUniqueName": "C:\\Users\\jarra\\Documents\\dotnet_projects\\dotnet_diaries\\DOTNET_DIARIES\\DOTNET_DIARIES.csproj",
         "projectName": "DOTNET_DIARIES",
-        "projectPath": "\\\\wsl.localhost\\Ubuntu\\home\\jadders\\dotnet_projects\\dotnet_diaries\\DOTNET_DIARIES\\DOTNET_DIARIES.csproj",
+        "projectPath": "C:\\Users\\jarra\\Documents\\dotnet_projects\\dotnet_diaries\\DOTNET_DIARIES\\DOTNET_DIARIES.csproj",
         "packagesPath": "C:\\Users\\jarra\\.nuget\\packages\\",
-        "outputPath": "\\\\wsl.localhost\\Ubuntu\\home\\jadders\\dotnet_projects\\dotnet_diaries\\DOTNET_DIARIES\\obj\\",
+        "outputPath": "C:\\Users\\jarra\\Documents\\dotnet_projects\\dotnet_diaries\\DOTNET_DIARIES\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jarra\\AppData\\Roaming\\NuGet\\NuGet.Config"

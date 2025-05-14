@@ -7,7 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddDbContext<DOTNET_DIARIES_Context>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DOTNET_DIARIES_Context")));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnectionString")));
 
 
 var app = builder.Build();
