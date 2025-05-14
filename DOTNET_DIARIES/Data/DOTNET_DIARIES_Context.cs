@@ -29,6 +29,36 @@ public class DOTNET_DIARIES_Context : DbContext
             .WithMany(bt => bt.BlogpostTags)
             .HasForeignKey(t => t.BlogpostId);
 
+        modelBuilder.Entity<Blogpost>().HasData(new Blogpost
+        {
+            Id = 1,
+            Title = "Blogpost about C#",
+            ImageUrl = "https://placecats.com/200/300",
+            Content = "This is the content of the first blogpost.",
+            PostedDate = DateTime.Now
+        });
+
+        modelBuilder.Entity<Tag>().HasData(new Tag
+        {
+            Id = 1,
+            Name = "C#"
+        }, new Tag
+        {
+            Id = 2,
+            Name = "ASP.NET"
+        });
+
+        modelBuilder.Entity<BlogpostTag>().HasData(new BlogpostTag
+        {
+            BlogpostId = 1,
+            TagId = 1
+        },
+        new BlogpostTag
+        {
+            BlogpostId = 1,
+            TagId = 2
+        });
+
         base.OnModelCreating(modelBuilder);
     }
 

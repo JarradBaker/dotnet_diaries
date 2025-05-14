@@ -1,7 +1,14 @@
+using DOTNET_DIARIES.Data;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddDbContext<DOTNET_DIARIES_Context>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DOTNET_DIARIES_Context")));
+
 
 var app = builder.Build();
 
