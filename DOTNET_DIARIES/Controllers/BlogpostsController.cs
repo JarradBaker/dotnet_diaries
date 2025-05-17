@@ -1,25 +1,21 @@
 using Microsoft.AspNetCore.Mvc;
 using DOTNET_DIARIES.Models;
 using DOTNET_DIARIES.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace BlogpostsController
 {
     public class BlogpostsController : Controller
     {
-        // GET: DOTNET_DIARIES
-        /*blic ActionResult Index()
+        private readonly DOTNET_DIARIES_Context _context;
+        public BlogpostsController(DOTNET_DIARIES_Context context)
         {
-            return View();
-        }*/
-
-        public IActionResult Random()
-        {
-           return Content("Hello from Blogpost");
+            _context = context;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            return View();
+            return View(await _context.Blogposts.ToListAsync());
         }
 
     }
