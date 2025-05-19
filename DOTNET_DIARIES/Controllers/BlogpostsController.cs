@@ -18,5 +18,20 @@ namespace BlogpostsController
             return View(await _context.Blogposts.ToListAsync());
         }
 
+        public async Task<IActionResult> Details(int? id)
+        {
+            var blogpost = await _context.Blogposts
+                .Include(bt => bt.BlogpostTags)
+                .ThenInclude(t => t.Tag)
+                .FirstOrDefaultAsync(x => x.Id == id);
+
+            if (blogpost == null)
+            {
+                return NotFound();
+            }
+
+            return View(blogpost);
+        }
+
     }
 }
